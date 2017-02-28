@@ -9,10 +9,13 @@ function wordFrequency(inputString){//creates a function that takes a string as 
           //for each index of array splitString, execute function propertyAdd, taking the value of
           //each index of splitString as an argument.
     splitString.forEach(function propertyAdd(each) {
-          stringContainer[each] = 1;
+        if (stringContainer[each] >= 1){
+            stringContainer[each]= stringContainer[each] + 1;
+          }else {
+              stringContainer[each] = 1;
+              }
           console.log(stringContainer);//testing
-    });
-
+        });
 }
 
 wordFrequency("The cat in the hat cat the");
