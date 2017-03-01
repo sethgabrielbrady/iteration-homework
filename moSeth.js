@@ -6,7 +6,7 @@ function wordFrequency(inputString){
     let splitString = inputString.split(' ');
     let stringContainer = {};
 
-    splitString.forEach(function propertyAdd(each) {
+    splitString.forEach(function propertyAdd(each){
         if (stringContainer[each] >= 1){
             stringContainer[each] = stringContainer[each] + 1;
           }else {
