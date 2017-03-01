@@ -15,14 +15,9 @@ function wordFrequency(inputString){
         });
 
         return stringContainer;
-
 }
 
-
 wordFrequency(sonnets);
-
-
-
 
 
 

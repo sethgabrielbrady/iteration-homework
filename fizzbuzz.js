@@ -4,20 +4,19 @@ function fizzBuzz(numberInput){
     let fizzyArray = [];
     for (i=1; i <= numberInput; i++){
       let number = i;
-
-
-    if (number % 5 === 0 && number % 3 === 0 ){
+      if (number % 5 === 0 && number % 3 === 0 ){
         fizzyArray.push('fizzbuzz');
-      }else if (number % 3 === 0 ){
-          fizzyArray.push('fizz');
-      }else if (number % 5 === 0){
-          fizzyArray.push('buzz');
-      }else{
-          fizzyArray.push(number);
+        }else if (number % 3 === 0 ){
+            fizzyArray.push('fizz');
+        }else if (number % 5 === 0){
+            fizzyArray.push('buzz');
+        }else{
+            fizzyArray.push(number);
     }
   }
   return fizzyArray;
 }
+
 let something = fizzBuzz(30);
 console.log(something);
 
